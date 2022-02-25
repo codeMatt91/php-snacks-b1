@@ -11,7 +11,7 @@ $age = $_GET['age'] ?? '';
 
 $access = '';
 
-if (strlen($name) >= 2 && strpos($mail, '@') && strpos($mail, '.') && is_numeric($age)) {
+if (strlen($name) >= 2 && strpos($mail, '@') && strpos($mail, '.') && is_numeric($age)) { // il controllo dell'età l'ho gestito tramite html con number 
    $access = 'Accesso riuscito';
    $color = 'text-info';
 } else {
