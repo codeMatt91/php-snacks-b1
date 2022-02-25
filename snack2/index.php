@@ -51,11 +51,9 @@ $keys = array_keys($posts);
 var_dump($keys);
 
 $first = $posts[$keys[0]];
-var_dump($first);
 $second = $posts[$keys[1]];
-var_dump($second);
 $third = $posts[$keys[2]];
-var_dump($third);
+
 
 
 ?>
@@ -75,10 +73,22 @@ var_dump($third);
    <div class="container">
       <h1>I miei post di Whatsapp</h1>
       <ul>
-         <?php for ($i = 0; $i < count($keys); $i++) : ?>
-            <li><?php echo $keys[$i] ?></li>
+         <h3> Messaggi del <?php echo $keys[0] ?></h3>
+         <?php for ($i = 0; $i < count($first); $i++) : ?>
+            <li><?php echo $first[$i]['title'] . ' ' . $first[$i]['author'] . ' ' . $first[$i]['text'] ?></li>
          <?php endfor; ?>
-
+      </ul>
+      <ul>
+         <h3> Messaggi del <?php echo $keys[1] ?></h3>
+         <?php for ($i = 0; $i < count($second); $i++) : ?>
+            <li><?php echo $second[$i]['title'] . ' ' . $second[$i]['author'] . ' ' . $second[$i]['text'] ?></li>
+         <?php endfor; ?>
+      </ul>
+      <ul>
+         <h3> Messaggi del <?php echo $keys[2] ?></h3>
+         <?php for ($i = 0; $i < count($third); $i++) : ?>
+            <li><?php echo $third[$i]['title'] . ' ' . $third[$i]['author'] . ' ' . $third[$i]['text'] ?></li>
+         <?php endfor; ?>
       </ul>
    </div>
 
