@@ -47,7 +47,15 @@ $posts = [
    ],
 ];
 
-print_r(array_keys($posts));
+$keys = array_keys($posts);
+var_dump($keys);
+
+$first = $posts[$keys[0]];
+var_dump($first);
+$second = $posts[$keys[1]];
+var_dump($second);
+$third = $posts[$keys[2]];
+var_dump($third);
 
 
 ?>
@@ -67,7 +75,9 @@ print_r(array_keys($posts));
    <div class="container">
       <h1>I miei post di Whatsapp</h1>
       <ul>
-
+         <?php for ($i = 0; $i < count($keys); $i++) : ?>
+            <li><?php echo $keys[$i] ?></li>
+         <?php endfor; ?>
 
       </ul>
    </div>
