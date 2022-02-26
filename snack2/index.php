@@ -6,7 +6,6 @@
  
  */
 
-
 $posts = [
 
    '10/01/2019' => [
@@ -53,7 +52,6 @@ var_dump($keys);
 $first = $posts[$keys[0]];
 $second = $posts[$keys[1]];
 $third = $posts[$keys[2]];
-
 
 
 ?>
