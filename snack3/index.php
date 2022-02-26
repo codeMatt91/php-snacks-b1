@@ -17,18 +17,6 @@ while (count($integers) <= 15) {
 };
 
 
-/*
-   if (in_array($integers[$i], $integers)) {
-      unset($integers[$i]);
-   }
-for ($i = 0; $i = 15; $i++) {
-   $number = rand(1, 100);
-   if (!in_array($number, $integers)) {
-      array_push($number, $integers);
-   }
-};
-*/
-
 print_r($integers);
 ?>
 
