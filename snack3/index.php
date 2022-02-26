@@ -35,7 +35,7 @@ print_r($integers);
    <div class="container">
       <h2>I miei 15 numeri unici</h2>
       <ul>
-         <?php for ($i = 0; $i <= count($integers); $i++) : ?>
+         <?php for ($i = 0; $i <= count($integers) - 1; $i++) : ?>
             <li><?php echo $integers[$i] ?></li>
          <?php endfor; ?>
       </ul>
