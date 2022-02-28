@@ -63,6 +63,17 @@ $pm = $db[$keys[1]];
          </ul>
       </div>
    </div>
+   <div class="container">
+      <?php foreach ($db as $item => $value) : ?>
+         <div class="bg-secondary w-25">
+            <ul>
+               <?php foreach ($value as $value) : ?>
+                  <li> <?php echo "$value[name] $value[lastname]" ?></li>
+               <?php endforeach; ?>
+            </ul>
+         </div>
+      <?php endforeach ?>
+   </div>
 </body>
 
 </html>
